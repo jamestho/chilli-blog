@@ -1,0 +1,31 @@
+{
+  "name": "blog.chilli.ai",
+  "config": {
+    "LASTVERSION": "0.1"
+  },
+  "version": "1.0.0",
+  "description": "My blog",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "testvariable": "echo $npm_package_config_LASTVERSION",
+    "test": "echo 'I like you Clarence. Always have. Always will.'",
+    "server": "hugo server -w -D -v",
+    "build": "hugo -v",
+    "algolia": "atomic-algolia",
+    "deploy": "aws s3 cp public s3://blog.chilli.ai --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamestho/blog.git"
+  },
+  "author": "James Thornber",
+  "license": "ISC",
+  "homepage": "https://blog.chilli.ai",
+  "bugs": {
+    "url": "https://github.com/jamestho/blog/issues"
+  },
+  "dependencies": {
+    "atomic-algolia": "^0.3.17"
+  }
+}
