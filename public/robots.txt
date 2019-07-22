@@ -1,1 +1,9 @@
 User-agent: *
+sitemap: https://blog.chilli.ai/sitemap.xml
+disallow: /img/avatar-kz.jpg
+disallow: /img/reward/
+allow: https://blog.chilli.ai/index.xml
+allow: https://blog.chilli.ai/blog/an-introduction-to-genealogical-dna-testing-and-what-it-means/
+allow: https://blog.chilli.ai/top/privacy/
+allow: https://blog.chilli.ai/top/about/
+allow: https://blog.chilli.ai/search/placeholder/

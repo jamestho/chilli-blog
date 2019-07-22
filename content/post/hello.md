@@ -2,8 +2,8 @@
 title: "Hello"
 description: "hello, first post"
 date: 2019-06-10T17:21:52+01:00
-draft: false
-author: "James T."
+draft: true
+author: "James"
 #categories: "hello"
 tags: ["welcome"]
 ---

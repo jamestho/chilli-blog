@@ -3,7 +3,7 @@ title: "About"
 description: "About me"
 date: 2019-06-10T23:45:24+01:00
 draft: false
-author: James T
+author: James
 type: post
 #categories: "about"
 tags: ["about"]

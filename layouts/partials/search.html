@@ -5,9 +5,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
 
 <div id="search-searchbar"></div>
- <div class="post-list" id="search-hits">
- </div>
-
+<div class="post-list" id="search-hits"></div>
 <script>
 const search = instantsearch({
   appId: '{{ .Site.Params.algolia_appId }}',
@@ -40,14 +38,10 @@ const hitTemplate = function(hit) {
   else{
       content = hit.summary;
   }
-
-
   return `
     <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
-      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
-      <div class="post-snippet">${content}</div>
+      <a class="post-link" href="${url}">${title}</a>
+      <a rel="'nofollow'" href="${url}" class="post-breadcrumbs">${breadcrumbs}</a> 
     </div>
   `;
 }
@@ -100,7 +94,7 @@ search.start();
 }
 .post-snippet .ais-Highlight {
   color: #2a7ae2;
-  font-style: normal;
+  font-style: small;
   font-weight: bold;
 }
 .post-snippet img {
